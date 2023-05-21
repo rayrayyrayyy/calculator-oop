@@ -1,7 +1,9 @@
 # Ray Allessandra Pacis | BSCPE 1-5
 
 # create class for calculator
-# create instance variables
+class CalculatorOop:
+    def __init__(self):
+    # create instance variables
 # define addition function
 # define subtraction function
 # define multiplication function
