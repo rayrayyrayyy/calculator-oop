@@ -9,7 +9,7 @@ from tkinter import ttk
 # open a window using tkinter
 root_window = Tk()
 root_window.title("OOP CALCULATOR")
-root_window.geometry("400x400")
+root_window.geometry("400x400+800+350")
 root_window.config(bg = "yellow")
 
 # create entry box and labels
@@ -20,6 +20,8 @@ number_1.place(x=170, y=10)
 
 note_2 = Label(root_window, text = "Enter second number:", bg = "yellow", font = ("Times", 15), justify = CENTER) # label for second num
 note_2.place(x=10, y=40)
+number_2 = Entry(root_window, font=("Segoe Script",10), justify = CENTER) # entry box for second num
+number_2.place(x=190, y=40)
 
 # call methods
 # display output
