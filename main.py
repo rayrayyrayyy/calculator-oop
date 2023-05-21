@@ -4,7 +4,7 @@ from calculator import CalculatorOop
 # call methods
 def main():
     compute = CalculatorOop()
-    compute.addition(number_1, number_2)
+    compute.addition(number_1 + number_2)
 
 
 # import tkinter library
