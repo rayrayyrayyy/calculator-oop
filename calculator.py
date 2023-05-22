@@ -16,6 +16,9 @@ class CalculatorOop:
         difference = first_num - second_num
         print(difference)
         
-   
-
-      
+    # define multiplication function
+    def multiplication(self):
+        first_num = float(input("Enter first number: "))
+        second_num = float(input("Enter second number: "))
+        product = first_num * second_num
+        print(product)

@@ -7,4 +7,6 @@ compute = CalculatorOop()
 compute.addition()
 
 compute.subtraction()
+
+compute.multiplication()
 # end program
