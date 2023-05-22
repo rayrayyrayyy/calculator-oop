@@ -16,5 +16,8 @@ elif operation_choices == "*":
     compute.multiplication() # call function multiplication
 elif operation_choices == "/":
     compute.division() # call function division
+else:
+    print("ERROR: Please input valid operations only ( +, -, *, / ).")
+    
 
 # end program
