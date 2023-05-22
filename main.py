@@ -1,15 +1,20 @@
+# import modules for design
+from colorama import Fore, Back, Style
+
 # import class
 from class_and_functions import CalculatorOop
 from intro_outro import IntroOutro
 
-# call methods
 compute = CalculatorOop()
 
-compute.addition()
+operation_choices = input("Operation: ")
+if operation_choices == "+":
+    compute.addition() # call function addition
+elif operation_choices == "-":
+    compute.subtraction() # call function subtraction
+elif operation_choices == "*":
+    compute.multiplication() # call function multiplication
+elif operation_choices == "/":
+    compute.division() # call function division
 
-compute.subtraction()
-
-compute.multiplication()
-
-compute.division()
 # end program
