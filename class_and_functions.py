@@ -1,5 +1,9 @@
 # Ray Allessandra Pacis | BSCPE 1-5
 
+#import modules for design 
+import pyfiglet
+from colorama import Fore, Back, Style
+
 # create class for calculator
 class CalculatorOop:
     # define addition function

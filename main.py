@@ -1,5 +1,5 @@
 # import class
-from calculator import CalculatorOop
+from class_and_functions import CalculatorOop
 
 # call methods
 compute = CalculatorOop()
