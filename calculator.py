@@ -22,3 +22,10 @@ class CalculatorOop:
         second_num = float(input("Enter second number: "))
         product = first_num * second_num
         print(product)
+
+    # define division function
+    def division(self):
+        first_num = float(input("Enter first number: "))
+        second_num = float(input("Enter second number: "))
+        quotient = first_num / second_num
+        print(quotient)
