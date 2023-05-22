@@ -5,7 +5,7 @@ from colorama import Fore, Back, Style
 class IntroOutro:
     def intro():
         # intro message
-        hi_welcome = pyfiglet.figlet_format('\n' + "Welcome User!", color = "yellow", font = "doom", width = 150, justify = "center")
+        hi_welcome = pyfiglet.figlet_format('\n' + "Welcome User!", font = "doom", width = 150, justify = "center")
         print(hi_welcome)
         print(Style.RESET_ALL)
         print(Fore.BLUE + "="*150)

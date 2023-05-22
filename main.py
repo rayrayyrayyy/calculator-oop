@@ -17,7 +17,6 @@ elif operation_choices == "*":
 elif operation_choices == "/":
     compute.division() # call function division
 else:
-    print("ERROR: Please input valid operations only ( +, -, *, / ).")
+    print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL)
     
-
 # end program
