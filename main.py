@@ -5,4 +5,6 @@ from calculator import CalculatorOop
 compute = CalculatorOop()
 
 compute.addition()
+
+compute.subtraction()
 # end program
