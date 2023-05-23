@@ -5,8 +5,8 @@ from colorama import Fore, Back, Style
 class IntroOutro:
     def intro(self):
         # intro message
-        hi_welcome = pyfiglet.figlet_format('\n' + "Welcome User!", font = "doom", width = 150, justify = "center")
-        print(hi_welcome)
+        hi_welcome = pyfiglet.figlet_format("Welcome User!", font = "doom", width = 150, justify = "center")
+        print(Fore.MAGENTA + hi_welcome)
         print(Style.RESET_ALL)
         print(Fore.BLUE + "="*150)
         print(Style.RESET_ALL)
@@ -18,7 +18,7 @@ class IntroOutro:
 
     def outro(self):
         # outro message
-        print('\n' + Fore.BLUE + Style.BRIGHT + "-"*150)
+        print('\n' + Fore.BLUE + Style.BRIGHT + "="*150 + Style.RESET_ALL)
         done = pyfiglet.figlet_format("Thank you!", font = 'doom', width = 150, justify = 'center')
-        print(done)
+        print(Fore.MAGENTA + done)
         print(Fore.BLUE + '='*69 + Style.RESET_ALL + "Have agreat day!" + Fore.BLUE + '='*69 + '\n') 

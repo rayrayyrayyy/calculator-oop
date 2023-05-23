@@ -10,7 +10,7 @@ class CalculatorOop:
     # define addition function
     def addition(self):
         add_note = pyfiglet.figlet_format("ADDITION", font = "big", width = 150, justify = "center")
-        print(Fore.BLUE + add_note)
+        print(Fore.LIGHTMAGENTA_EX + add_note)
 
         first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
         second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
@@ -21,7 +21,7 @@ class CalculatorOop:
     # define subtraction function
     def subtraction(self):
         sub_note = pyfiglet.figlet_format("SUBTRACTION", font = "big", width = 150, justify = "center")
-        print(Fore.BLUE + sub_note)
+        print(Fore.LIGHTMAGENTA_EX + sub_note)
 
         first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
         second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
@@ -32,7 +32,7 @@ class CalculatorOop:
     # define multiplication function
     def multiplication(self):
         mul_note = pyfiglet.figlet_format("MULTIPLICATION", font = "big", width = 150, justify = "center")
-        print(Fore.BLUE + mul_note)
+        print(Fore.LIGHTMAGENTA_EX + mul_note)
 
         first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
         second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
@@ -43,7 +43,7 @@ class CalculatorOop:
     # define division function
     def division(self):
         div_note = pyfiglet.figlet_format("DIVISION", font = "big", width = 150, justify = "center")
-        print(Fore.BLUE + div_note)
+        print(Fore.LIGHTMAGENTA_EX + div_note)
 
         first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
         second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))

@@ -6,12 +6,13 @@ import time
 from class_and_functions import CalculatorOop
 from intro_outro import IntroOutro
 
+# create objects
 compute = CalculatorOop()
 welcome_bye = IntroOutro() 
 
-welcome_bye.intro()
+welcome_bye.intro() # call intro
 
-operation_choices = input("Operation: ")
+operation_choices = input("Operation: " + Fore.BLUE)
 if operation_choices == "+":
     compute.addition() # call function addition
 elif operation_choices == "-":
@@ -24,6 +25,6 @@ else:
     print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL)
 
 time.sleep(1)
-welcome_bye.outro()
+welcome_bye.outro() # call outro
     
 # end program
