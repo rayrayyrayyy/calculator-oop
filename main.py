@@ -1,11 +1,15 @@
 # import modules for design
 from colorama import Fore, Back, Style
+import time
 
 # import class
 from class_and_functions import CalculatorOop
 from intro_outro import IntroOutro
 
 compute = CalculatorOop()
+welcome_bye = IntroOutro() 
+
+welcome_bye.intro()
 
 operation_choices = input("Operation: ")
 if operation_choices == "+":
@@ -18,5 +22,8 @@ elif operation_choices == "/":
     compute.division() # call function division
 else:
     print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL)
+
+time.sleep(1)
+welcome_bye.outro()
     
 # end program

@@ -3,7 +3,7 @@ import pyfiglet
 from colorama import Fore, Back, Style
 
 class IntroOutro:
-    def intro():
+    def intro(self):
         # intro message
         hi_welcome = pyfiglet.figlet_format('\n' + "Welcome User!", font = "doom", width = 150, justify = "center")
         print(hi_welcome)
@@ -16,7 +16,7 @@ class IntroOutro:
         print('\n' + Fore.BLUE + "="*150)
         print(Style.RESET_ALL)
 
-    def outro():
+    def outro(self):
         # outro message
         print('\n' + Fore.BLUE + Style.BRIGHT + "-"*150)
         done = pyfiglet.figlet_format("Thank you!", font = 'doom', width = 150, justify = 'center')
