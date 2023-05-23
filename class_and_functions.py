@@ -44,9 +44,13 @@ class CalculatorOop:
     def division(self):
         div_note = pyfiglet.figlet_format("DIVISION", font = "big", width = 150, justify = "center")
         print(Fore.LIGHTMAGENTA_EX + div_note)
-
-        first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
-        second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
-        quotient = first_num / second_num
-        time.sleep(1)
-        print("\nRESULT: " + Fore.BLUE + str(quotient) + Style.RESET_ALL)
+        try:
+            first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
+            second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
+            quotient = first_num / second_num
+            time.sleep(1)
+            print("\nRESULT: " + Fore.BLUE + str(quotient) + Style.RESET_ALL)
+        except ZeroDivisionError:
+            print(Fore.RED + Style.BRIGHT + "\nERROR: Division by zero is not allowed.\n" + Style.RESET_ALL)
+        except: 
+            print(Fore.RED + Style.BRIGHT + "\nINVALID INPUT." + Style.RESET_ALL)
