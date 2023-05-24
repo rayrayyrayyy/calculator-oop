@@ -7,6 +7,23 @@ import pyfiglet
 
 # create class for calculator
 class CalculatorOop:
+    # define function to try again
+    def compute_again():
+        retry = None
+        while retry is None:
+            reply = input("\n DO YOU WANT TO COMPUTE AGAIN? Yes/No? ")
+            try:
+                if reply == "Y" or reply == "Yes" or reply == "YES" or reply == "yes" or reply == "y":
+                    retry = str(reply)
+                    continue
+                if reply == "N" or reply == "No" or reply == "NO" or reply == "no" or reply == "n":
+                    exit
+                else:
+                    print("\tYou can type either YES, Yes, yes, Y, y or NO, No, no, N, n.") #These are the only acceptable inputs
+            except ValueError:
+                print("\n------------------------------------------------------------------------------------------------------")
+                print("ERROR! Please choose only between YES or NO.")
+
     # define addition function
     def addition(self):
         add_note = pyfiglet.figlet_format("ADDITION", font = "big", width = 150, justify = "center")

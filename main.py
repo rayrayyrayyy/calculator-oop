@@ -15,6 +15,8 @@ welcome_bye.intro() # call intro
 operation_choices = input("Operation: " + Fore.BLUE)
 if operation_choices == "+":
     compute.addition() # call function addition
+    compute.compute_again() # call compute again function
+
 elif operation_choices == "-":
     compute.subtraction() # call function subtraction
 elif operation_choices == "*":
