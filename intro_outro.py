@@ -21,4 +21,4 @@ class IntroOutro:
         print('\n' + Fore.BLUE + Style.BRIGHT + "="*150 + Style.RESET_ALL)
         done = pyfiglet.figlet_format("Thank you!", font = 'doom', width = 150, justify = 'center')
         print(Fore.MAGENTA + done)
-        print(Fore.BLUE + '='*69 + Style.RESET_ALL + "Have agreat day!" + Fore.BLUE + '='*69 + '\n') 
+        print(Fore.BLUE + '='*69 + Style.RESET_ALL + "Have a great day!" + Fore.BLUE + '='*69 + '\n') 
