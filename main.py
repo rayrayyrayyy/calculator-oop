@@ -22,8 +22,7 @@ elif operation_choices == "*":
 elif operation_choices == "/":
     compute.division() # call function division
 else:
-    print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL)
-    exit
+    print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL) 
 
 time.sleep(1)
 welcome_bye.outro() # call outro

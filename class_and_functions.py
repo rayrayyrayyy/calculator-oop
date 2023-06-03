@@ -5,6 +5,12 @@ from colorama import Fore, Back, Style
 import time
 import pyfiglet
 
+from user_input import UserInput
+
+class_input = UserInput()
+first_num = class_input.ask_user()
+second_num = class_input.ask_user()
+
 # create class for calculator
 class CalculatorOop:
     # define addition function
@@ -12,8 +18,6 @@ class CalculatorOop:
         add_note = pyfiglet.figlet_format("ADDITION", font = "big", width = 150, justify = "center")
         print(Fore.LIGHTMAGENTA_EX + add_note)
 
-        first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
-        second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
         sum = first_num + second_num
         time.sleep(1)
         print("\nRESULT: " + Fore.BLUE + str(sum) + Style.RESET_ALL)
@@ -23,8 +27,6 @@ class CalculatorOop:
         sub_note = pyfiglet.figlet_format("SUBTRACTION", font = "big", width = 150, justify = "center")
         print(Fore.LIGHTMAGENTA_EX + sub_note)
 
-        first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
-        second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
         difference = first_num - second_num
         time.sleep(1)
         print("\nRESULT: " + Fore.BLUE + str(difference) + Style.RESET_ALL)
@@ -34,8 +36,6 @@ class CalculatorOop:
         mul_note = pyfiglet.figlet_format("MULTIPLICATION", font = "big", width = 150, justify = "center")
         print(Fore.LIGHTMAGENTA_EX + mul_note)
 
-        first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
-        second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
         product = first_num * second_num
         time.sleep(1)
         print("\nRESULT: " + Fore.BLUE + str(product) + Style.RESET_ALL)
@@ -45,8 +45,6 @@ class CalculatorOop:
         div_note = pyfiglet.figlet_format("DIVISION", font = "big", width = 150, justify = "center")
         print(Fore.LIGHTMAGENTA_EX + div_note)
         try:
-            first_num = float(input('\033[1;35m' + "\nEnter first number: \033[0m"))
-            second_num = float(input('\033[1;35m' + "Enter second number: \033[0m"))
             quotient = first_num / second_num
             time.sleep(1)
             print("\nRESULT: " + Fore.BLUE + str(quotient) + Style.RESET_ALL)
