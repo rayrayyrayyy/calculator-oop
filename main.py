@@ -5,26 +5,28 @@ import time
 # import class
 from class_and_functions import CalculatorOop
 from intro_outro import IntroOutro
+from child_class import CalculatorRay
 
 # create objects
 compute = CalculatorOop()
 welcome_bye = IntroOutro() 
+calculator_ray = CalculatorRay()
 
-welcome_bye.intro() # call intro
+calculator_ray.intro() # call intro
 
 operation_choices = input("Operation: " + Fore.BLUE)
 if operation_choices == "+":
-    compute.addition() # call function addition
+    calculator_ray.addition() # call function addition
 elif operation_choices == "-":
-    compute.subtraction() # call function subtraction
+    calculator_ray.subtraction() # call function subtraction
 elif operation_choices == "*":
-    compute.multiplication() # call function multiplication
+    calculator_ray.multiplication() # call function multiplication
 elif operation_choices == "/":
-    compute.division() # call function division
+    calculator_ray.division() # call function division
 else:
     print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL) 
 
 time.sleep(1)
-welcome_bye.outro() # call outro
+calculator_ray.outro() # call outro
     
 # end program
