@@ -12,7 +12,7 @@ compute = CalculatorOop()
 welcome_bye = IntroOutro() 
 calculator_ray = CalculatorRay()
 
-calculator_ray.intro() # call intro
+welcome_bye.intro() # call intro
 
 operation_choices = input("Operation: " + Fore.BLUE)
 if operation_choices == "+":
@@ -27,6 +27,6 @@ else:
     print(Fore.RED + Style.BRIGHT + "\nERROR: Please input valid operations only ( +, -, *, / ).\n" + Style.RESET_ALL) 
 
 time.sleep(1)
-calculator_ray.outro() # call outro
+welcome_bye.outro() # call outro
     
 # end program
